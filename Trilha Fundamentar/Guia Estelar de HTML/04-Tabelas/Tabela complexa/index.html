@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Complexa</title>
+</head>
+<body>
+    <table>
+        <caption>Produzidos x Vendidos por loja</caption>
+        <colgroup>
+            <col>
+            <col span="2" style="background-color:rgba(30, 30, 105, 0.568);">
+            <col span="2" style="background-color:rgba(116, 30, 30, 0.514) ;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th rowspan="2"></th> <!--rowspan diz quantas linhas é para ocupar o elemento-->
+                <th colspan="2" scope="colgroup">Loja 1</th> <!--colspan diz quantas colunas irá ocupar o elemento-->
+                <th colspan="2" scope="colgroup">Loja 2</th>
+            </tr>
+            <tr>
+                <th scope="col">Produzidos</th> <!--scope é necessário para a acessibilidade e é de grande importância-->
+                <th scope="col">Vendidos</th>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Vassouras</th>
+                <td>40</td>
+                <td>30</td>
+                <td>60</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <th scope="row">Maçanetas</th>
+                <td>31</td>
+                <td>19</td>
+                <td>100</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <th scope="row">Utensílios</th>
+                <td>212</td>
+                <td>191</td>
+                <td>114</td>
+                <td>110</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
